@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 shrink-to-fit=no">
+    <title>My Photo Album</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://resonova.github.io/cdn/css/fa.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <style>
+        #s3slider {
+            width: 400px;
+            /* important to be same as image width */
+            height: 300px;
+            /* important to be same as image height */
+            position: relative;
+            /* important */
+            overflow: hidden;
+            /* important */
+        }
+
+        #s3sliderContent {
+            width: 400px;
+            /* important to be same as image width or wider */
+            position: absolute;
+            /* important */
+            top: 0;
+            /* important */
+            margin-left: 0;
+            /* important */
+        }
+
+        .s3sliderImage {
+            float: left;
+            /* important */
+            position: relative;
+            /* important */
+            display: none;
+            /* important */
+        }
+
+        .s3sliderImage span {
+            position: absolute;
+            /* important */
+            left: 0;
+            font: 10px/15px Arial, Helvetica, sans-serif;
+            padding: 10px 13px;
+            width: 374px;
+            background-color: #000;
+            filter: alpha(opacity=70);
+            /* here you can set the opacity of box with text */
+            -moz-opacity: 0.7;
+            /* here you can set the opacity of box with text */
+            -khtml-opacity: 0.7;
+            /* here you can set the opacity of box with text */
+            opacity: 0.7;
+            /* here you can set the opacity of box with text */
+            color: #fff;
+            display: none;
+            /* important */
+            top: 0;
+            /*
+        if you put top: 0;  -> the box with text will be shown 
+                                at the top of the image
+        if you put bottom: 0;  -> the box with text will be shown 
+                                at the bottom of the image
+    */
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://willinspire.github.io/content-storage/js/s3_slider.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p></p>
+        <h1>My Photo Album</h1>
+        <p></p>
+        <hr>
+        <div id="slider">
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/01.jpg" />
+                </a>
+                <!--
+                    <span>
+                    <b>A Tile is good</b><br/>Some text long or short text should be placed here to inform customers of your great products...</span>
+                -->
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/02.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/03.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/04.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/05.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/06.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/07.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/08.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/09.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/10.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/11.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/12.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/13.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/14.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/15.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/16.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/17.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/18.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/19.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/20.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/21.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/22.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/23.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/24.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/25.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/26.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/27.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/28.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/29.jpg" />
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.instagram.com/kopud.ding">
+                    <img src="https://willinspire.github.io/content-storage/img/30.jpg" />
+                </a>
+            </div>
+        </div>
+
+        <script>
+            jQuery(function ($) {
+                $('#slider').s3Slider({
+                    timeout: 4000,
+                    fadeTime: 1000
+                });
+            });
+        </script>
+        <hr>
+        <p>Photos by:
+            <a href="https://www.lunaverse.life/">
+                <i>Lunaverse.life</i>
+            </a>
+        </p>
+        <br>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
