@@ -26,24 +26,26 @@
         }
 
         .div-screen-size {
-            box-sizing:content-box;
+            box-sizing: content-box;
             height: 80vh;
             width: 75vw;
         }
 
         .center-text {
-            text-align:center;
+            text-align: center;
         }
 
         .slider {
             width: 90%;
             margin: 10px auto;
         }
+
         /*
         .slick-slide {
             margin: 10px 10px;
         }
         */
+
         .slick-slide img {
             width: 100%;
         }
@@ -65,7 +67,6 @@
         .slick-current {
             opacity: 1;
         }
-        
     </style>
 
 </head>
@@ -73,7 +74,7 @@
 <body>
     <div class="container">
         <p></p>
-        <h1 class="center-text">My Photo Album</h1>
+        <h2 class="center-text">My Photo Album</h2>
         <p></p>
     </div>
     <div class="container">
@@ -232,7 +233,7 @@
     </div>
     <div class="container center-text">
         <hr>
-        <input class="btn btn-info" type="button" value="BACK" onClick="history.go(-1)">
+        <p><input class="btn btn-info" type="button" value="BACK" onClick="history.go(-1)"></p>
         <br>
         <p class="center-text">Photos by
             <a href="https://www.lunaverse.life/">
@@ -252,11 +253,28 @@
     <!-- Slideshow init -->
     <script>
         $(document).ready(function () {
-            $(".center").slick(
-                {breakpoint:1024,settings:{slidesToShow:4,slidesToScroll:2,infinite:true,dots:false,centerMode:true}},
-                {breakpoint: 600,settings:{slidesToShow:2,slidesToScroll:1,infinite:true,dots:false,centerMode:true}},
-                {breakpoint: 300,settings:"unslick"}
-            );
+            $(".center").slick({
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: false,
+                    centerMode: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    centerMode: true
+                }
+            }, {
+                breakpoint: 300,
+                settings: "unslick"
+            });
         })
     </script>
 </body>
